@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADBDBE912B61C1ED007092CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBDBE902B61C1ED007092CB /* AppDelegate.swift */; };
+		ADBDBE932B61C1ED007092CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBDBE922B61C1ED007092CB /* SceneDelegate.swift */; };
+		ADBDBE952B61C1ED007092CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBDBE942B61C1ED007092CB /* ViewController.swift */; };
+		ADBDBE982B61C1ED007092CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADBDBE962B61C1ED007092CB /* Main.storyboard */; };
+		ADBDBE9A2B61C1EF007092CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADBDBE992B61C1EF007092CB /* Assets.xcassets */; };
+		ADBDBE9D2B61C1EF007092CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADBDBE9B2B61C1EF007092CB /* LaunchScreen.storyboard */; };
+		ADBDBEAB2B61C703007092CB /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBDBEAA2B61C703007092CB /* Crypto.swift */; };
+		ADBDBEAD2B61C8F2007092CB /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBDBEAC2B61C8F2007092CB /* Webservice.swift */; };
+		ADBDBEAF2B61D022007092CB /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBDBEAE2B61D022007092CB /* CryptoViewModel.swift */; };
+		ADBDBEB62B61D209007092CB /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = ADBDBEB52B61D209007092CB /* RxCocoa */; };
+		ADBDBEBE2B61D209007092CB /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ADBDBEBD2B61D209007092CB /* RxSwift */; };
+		ADBDBEC62B61DCF1007092CB /* startVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBDBEC52B61DCF1007092CB /* startVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ADBDBE8D2B61C1ED007092CB /* cryptocrazy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cryptocrazy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBDBE902B61C1ED007092CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADBDBE922B61C1ED007092CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ADBDBE942B61C1ED007092CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADBDBE972B61C1ED007092CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADBDBE992B61C1EF007092CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADBDBE9C2B61C1EF007092CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADBDBE9E2B61C1EF007092CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADBDBEAA2B61C703007092CB /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		ADBDBEAC2B61C8F2007092CB /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		ADBDBEAE2B61D022007092CB /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
+		ADBDBEC52B61DCF1007092CB /* startVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADBDBE8A2B61C1ED007092CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBDBEB62B61D209007092CB /* RxCocoa in Frameworks */,
+				ADBDBEBE2B61D209007092CB /* RxSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADBDBE842B61C1ED007092CB = {
+			isa = PBXGroup;
+			children = (
+				ADBDBE8F2B61C1ED007092CB /* cryptocrazy */,
+				ADBDBE8E2B61C1ED007092CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADBDBE8E2B61C1ED007092CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADBDBE8D2B61C1ED007092CB /* cryptocrazy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADBDBE8F2B61C1ED007092CB /* cryptocrazy */ = {
+			isa = PBXGroup;
+			children = (
+				ADBDBEA72B61C3C5007092CB /* Service */,
+				ADBDBEA62B61C393007092CB /* Model */,
+				ADBDBEA52B61C389007092CB /* ViewModel */,
+				ADBDBEA42B61C376007092CB /* View */,
+				ADBDBE962B61C1ED007092CB /* Main.storyboard */,
+				ADBDBE992B61C1EF007092CB /* Assets.xcassets */,
+				ADBDBE9B2B61C1EF007092CB /* LaunchScreen.storyboard */,
+				ADBDBE9E2B61C1EF007092CB /* Info.plist */,
+			);
+			path = cryptocrazy;
+			sourceTree = "<group>";
+		};
+		ADBDBEA42B61C376007092CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADBDBE902B61C1ED007092CB /* AppDelegate.swift */,
+				ADBDBE922B61C1ED007092CB /* SceneDelegate.swift */,
+				ADBDBE942B61C1ED007092CB /* ViewController.swift */,
+				ADBDBEC52B61DCF1007092CB /* startVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADBDBEA52B61C389007092CB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ADBDBEAE2B61D022007092CB /* CryptoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ADBDBEA62B61C393007092CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADBDBEAA2B61C703007092CB /* Crypto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADBDBEA72B61C3C5007092CB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ADBDBEAC2B61C8F2007092CB /* Webservice.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADBDBE8C2B61C1ED007092CB /* cryptocrazy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADBDBEA12B61C1EF007092CB /* Build configuration list for PBXNativeTarget "cryptocrazy" */;
+			buildPhases = (
+				ADBDBE892B61C1ED007092CB /* Sources */,
+				ADBDBE8A2B61C1ED007092CB /* Frameworks */,
+				ADBDBE8B2B61C1ED007092CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cryptocrazy;
+			packageProductDependencies = (
+				ADBDBEB52B61D209007092CB /* RxCocoa */,
+				ADBDBEBD2B61D209007092CB /* RxSwift */,
+			);
+			productName = cryptocrazy;
+			productReference = ADBDBE8D2B61C1ED007092CB /* cryptocrazy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADBDBE852B61C1ED007092CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					ADBDBE8C2B61C1ED007092CB = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = ADBDBE882B61C1ED007092CB /* Build configuration list for PBXProject "cryptocrazy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADBDBE842B61C1ED007092CB;
+			packageReferences = (
+				ADBDBEB02B61D209007092CB /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			productRefGroup = ADBDBE8E2B61C1ED007092CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADBDBE8C2B61C1ED007092CB /* cryptocrazy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADBDBE8B2B61C1ED007092CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBDBE9D2B61C1EF007092CB /* LaunchScreen.storyboard in Resources */,
+				ADBDBE9A2B61C1EF007092CB /* Assets.xcassets in Resources */,
+				ADBDBE982B61C1ED007092CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADBDBE892B61C1ED007092CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBDBEAB2B61C703007092CB /* Crypto.swift in Sources */,
+				ADBDBE952B61C1ED007092CB /* ViewController.swift in Sources */,
+				ADBDBE912B61C1ED007092CB /* AppDelegate.swift in Sources */,
+				ADBDBEAD2B61C8F2007092CB /* Webservice.swift in Sources */,
+				ADBDBE932B61C1ED007092CB /* SceneDelegate.swift in Sources */,
+				ADBDBEC62B61DCF1007092CB /* startVC.swift in Sources */,
+				ADBDBEAF2B61D022007092CB /* CryptoViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ADBDBE962B61C1ED007092CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADBDBE972B61C1ED007092CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADBDBE9B2B61C1EF007092CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADBDBE9C2B61C1EF007092CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADBDBE9F2B61C1EF007092CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADBDBEA02B61C1EF007092CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADBDBEA22B61C1EF007092CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8BUJ4V9PBX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cryptocrazy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olgunbingol.cryptocrazy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADBDBEA32B61C1EF007092CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8BUJ4V9PBX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cryptocrazy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olgunbingol.cryptocrazy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADBDBE882B61C1ED007092CB /* Build configuration list for PBXProject "cryptocrazy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBDBE9F2B61C1EF007092CB /* Debug */,
+				ADBDBEA02B61C1EF007092CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADBDBEA12B61C1EF007092CB /* Build configuration list for PBXNativeTarget "cryptocrazy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBDBEA22B61C1EF007092CB /* Debug */,
+				ADBDBEA32B61C1EF007092CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADBDBEB02B61D209007092CB /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADBDBEB52B61D209007092CB /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADBDBEB02B61D209007092CB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		ADBDBEBD2B61D209007092CB /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADBDBEB02B61D209007092CB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ADBDBE852B61C1ED007092CB /* Project object */;
+}
